@@ -201,14 +201,13 @@
 }
 
 .sidebar li{
-  font-size: 60px;
+  font-size: 50px;
   width: 100%;
   display: flex;
 }
 
 .sidebar li:first-child {
-  justify-content: end;
-  margin: 20px;
+  justify-content: start;
 }
 
 .menu {

@@ -11,7 +11,7 @@ import { faYoutube } from '@fortawesome/free-brands-svg-icons'
 function Footer() {
     window.onscroll = function(){
         const footer = this.document.querySelector('.footer')
-        if (this.window.scrollY + this.window.innerHeight >= this.document.body.offsetHeight) {
+        if (this.window.scrollY + this.window.innerHeight >= this.document.body.offsetHeight - 50) {
             footer.style.bottom = 0
         } else {
             footer.style.bottom = '-500px'
