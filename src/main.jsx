@@ -1,6 +1,8 @@
 import { StrictMode } from 'react'
+import { createRoot } from 'react-dom/client'
 import './index.css'
 import App from './App.jsx'
+import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import { HashRouter,Routes,Route } from 'react-router-dom'
 import Home from './components/Home/Home.jsx'
 import About from './components/About/About.jsx'
@@ -8,7 +10,7 @@ import Contacts from './components/Contacts/Contacts.jsx'
 import Github from './components/Github/Github.jsx'
 import User from './components/User/User.jsx'
 
-document.getElementById('root').render(
+createRoot(document.getElementById('root')).render(
   <StrictMode>
     <HashRouter>
       <Routes>
