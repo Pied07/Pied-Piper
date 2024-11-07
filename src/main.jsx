@@ -36,7 +36,10 @@ const router = createBrowserRouter([
       }
     ]
   }
-])
+],
+{
+  basename: "/Pied-Piper"
+})
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
