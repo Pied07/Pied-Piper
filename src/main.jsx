@@ -3,6 +3,7 @@ import { createRoot } from 'react-dom/client'
 import './index.css'
 import App from './App.jsx'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
+import { HashRouter,Routes,Route } from 'react-router-dom'
 import Home from './components/Home/Home.jsx'
 import About from './components/About/About.jsx'
 import Contacts from './components/Contacts/Contacts.jsx'
@@ -38,11 +39,21 @@ const router = createBrowserRouter([
   }
 ],
 {
-  basename: "/Pied-Piper"
+  basename: "/Pied-Piper",
 })
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <RouterProvider router={router} />
+    <HashRouter>
+      <Routes>
+        <Route path='/' element={<App />} >
+          <Route path='' element={<Home />} />
+          <Route path='about' element={<About />} />
+          <Route path='contacts' element={<Contacts />} />
+          <Route path='github' element={<Github />} />
+          <Route path='user/:id' element={<User />} />
+        </Route>  
+      </Routes>
+    </HashRouter>
   </StrictMode>,
 )
