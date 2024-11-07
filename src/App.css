@@ -232,7 +232,7 @@
   }
 }
 
-@media(max-width: 800px) {
+@media(max-width: 2100px) {
   .hideItems {
     display: none;
   }
