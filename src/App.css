@@ -150,6 +150,88 @@
     margin: 0 2px;
   }
 }
+@media screen and (max-width: 800px) {
+  #root {
+    margin: 0;
+  }
+  body {
+    width: 100%;
+    overflow-x: hidden;
+    display: flex;
+    justify-content: center;
+  }
+  html {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+  .header .navigation .items.sidebar {
+    width: 100%;
+  }
+  .header .sidebar li {
+    font-size: 20px;
+  }
+  h1{
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+  }
+  .welcome {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .welcomeText {
+    width: 80%;
+    margin-top: 40px;
+    margin: 0 20px;
+  }
+  .card {
+    position: relative;
+  }
+  .byebye {
+    flex-direction: column;
+  }
+  .byebye .byebye-text {
+    margin-top: 40px;
+    margin: 0 20px;
+  }
+  .about .about-content {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 20px;
+    margin-bottom: 150px;
+  }
+  .about-content .about-logo {
+    font-size: 8rem;
+  }
+  .about-text p {
+    font-size: 20px;
+    width: 100%;
+  }
+  .Github .github-items {
+    margin-bottom: 150px;
+  }
+  .Home .block {
+    animation: none;
+  }
+  .footer .footerContains {
+    display: none;
+  }
+  .footer .BelowContains {
+    flex-direction: column;
+    margin: 2px 2px;
+  }
+  .footer .BelowContains .handles {
+    display: flex;
+    justify-content: center;
+    margin: 0 2px;
+  }
+}
+
 
 @media(max-width: 1100px) {
   .hideItems {
@@ -642,14 +724,14 @@
 
 .scroll-to-top {
   position: fixed;
-  bottom: 80px;
-  right: 80px;
+  bottom: 20px;
+  right: 20px;
   z-index: 100;
   opacity: 0;
   transition: all 0.9s ease-in;
   border-radius: 50%;
-  width: 100px;
-  height: 100px;
+  width: 40px;
+  height: 40px;
   font-size: 25px;
   padding: 0;
   pointer-events: none;
@@ -670,7 +752,7 @@
 .scroll-text {
   transform: rotateZ(-90deg);
   margin: 0;
-  font-size: 60px;
+  font-size: 30px;
   color: yellow;
 }
 
