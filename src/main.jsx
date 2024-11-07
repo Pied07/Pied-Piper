@@ -11,7 +11,7 @@ import User from './components/User/User.jsx'
 
 const router = createBrowserRouter([
   {
-    path: '/',
+    path: '/#',
     element: <App />,
     children: [
       {
