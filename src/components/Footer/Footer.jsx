@@ -9,14 +9,14 @@ import { faTwitter } from '@fortawesome/free-brands-svg-icons'
 import { faYoutube } from '@fortawesome/free-brands-svg-icons'
 
 function Footer() {
-    window.addEventListener('scroll',function(){
+    window.onscroll = function(){
         const footer = this.document.querySelector('.footer')
         if (this.window.scrollY + this.window.innerHeight >= this.document.body.offsetHeight) {
             footer.style.bottom = 0
         } else {
             footer.style.bottom = '-500px'
         }
-    })
+    }
   return (
     <>
         <footer className="footer">
